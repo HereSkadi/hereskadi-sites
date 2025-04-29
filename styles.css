@@ -84,26 +84,23 @@ body {
   }
 }
 
-/* Line separator */
+/* Vertical Line Container */
 .line-container {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: 20px 0;
 }
 
-.separator {
-  border: 0;
-  border-top: 2px solid white;
-  width: 100%;
-  flex-grow: 1;
+.vertical-line {
+  height: 100px;
+  width: 2px;
+  background-color: white;
   margin-right: 10px;
 }
 
 .line-text {
   font-size: 18px;
   color: white;
-  padding-left: 10px;
 }
 
 .additional-content {
