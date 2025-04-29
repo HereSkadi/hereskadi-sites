@@ -1,146 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      background-color: #111;
-      color: white;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .header-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100px;
-      background-color: rgba(245, 130, 255, 0.6); /* pinkish-purple */
-      display: flex;
-      justify-content: space-between; /* Space between logo/name and menu button */
-      align-items: center;
-      padding: 0 20px;
-      box-sizing: border-box;
-      animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .branding {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo {
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid white;
-    }
-
-    .name {
-      margin-left: 10px;
-      width: 120px;
-      height: 30px;
-      font-size: 20px;
-      line-height: 30px;
-      font-weight: bold;
-    }
-
-    h1 {
-      margin-top: 140px;
-      text-align: center;
-    }
-
-    /* Three dot menu button */
-    .menu-button {
-      width: 30px;
-      height: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .menu-button div {
-      width: 25px;
-      height: 5px;
-      background-color: white;
-      border-radius: 5px;
-    }
-
-    /* Hidden menu */
-    .menu {
-      display: none;
-      position: absolute;
-      top: 50px;
-      right: 20px;
-      width: 150px;
-      background-color: rgba(245, 130, 255, 0.8);
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .menu a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      font-size: 16px;
-      border-bottom: 1px solid white;
-    }
-
-    .menu a:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    /* Content for the config page */
-    .content {
-      text-align: center;
-      margin-top: 120px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Config File Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header Bar with Logo, Name, and Hamburger Menu -->
+  <!-- Header Bar -->
   <div class="header-bar">
     <div class="branding">
       <img src="YTLogo.png" alt="logo" class="logo">
       <div class="name">HereSkadi</div>
     </div>
-    
-    <!-- Menu Button (on the right side) -->
-    <div class="menu-button" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    
-    <!-- Hidden Menu -->
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>          <!-- Home: Goes to the homepage -->
-      <a href="configs.html">Config File</a> <!-- Config File: Goes to the config file page -->
-      <a href="#">About</a>                  <!-- About: Can be linked later -->
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="dropdown" id="dropdownMenu">
+      <a href="index.html">Home</a>
+      <a href="configs.html">Config File</a>
+      <a href="#">About</a>
     </div>
   </div>
 
-  <!-- Content for the config page -->
-  <div class="content">
-    <h1>Config Files</h1>  <!-- Kept the first sentence as requested -->
+  <!-- Main Content -->
+  <div class="content fade-in">
+    <h1>Config File Page</h1>
+    <!-- You can add your upload buttons, file lists, etc. here -->
   </div>
 
   <script>
-    // Toggle function for the hamburger menu
     function toggleMenu() {
-      var menu = document.getElementById('menu');
-      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+      document.getElementById("dropdownMenu").classList.toggle("show");
     }
   </script>
 
