@@ -99,10 +99,17 @@
     .menu a:hover {
       background-color: rgba(255, 255, 255, 0.1);
     }
+
+    /* Content for the homepage */
+    .content {
+      text-align: center;
+      margin-top: 120px;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Header Bar with Logo, Name, and Hamburger Menu -->
   <div class="header-bar">
     <div class="branding">
       <img src="YTLogo.png" alt="logo" class="logo">
@@ -118,15 +125,20 @@
     
     <!-- Hidden Menu -->
     <div class="menu" id="menu">
-      <a href="#">Home</a>
-      <a href="#">Config File</a>
-      <a href="#">About</a>
+      <a href="index.html">Home</a>          <!-- Home: Goes to the homepage -->
+      <a href="configs.html">Config File</a> <!-- Config File: Goes to the config file page -->
+      <a href="#">About</a>                  <!-- About: Can be linked later -->
     </div>
   </div>
 
-  <h1>Welcome to HereSkadi Config Hub</h1>
+  <!-- Content for the homepage -->
+  <div class="content">
+    <h1>Welcome to HereSkadi Config Hub</h1>
+    <p>This is the homepage where you can manage and access configuration files for low-end gaming!</p>
+  </div>
 
   <script>
+    // Toggle function for the hamburger menu
     function toggleMenu() {
       var menu = document.getElementById('menu');
       menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
