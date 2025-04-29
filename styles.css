@@ -1,16 +1,28 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: white;
+/* Existing styles... */
+
+.intro-details {
+  max-width: 800px;
+  margin: 20px auto;
   text-align: center;
-  padding: 2em;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #ddd;
 }
 
-a {
-  color: #00ffff;
-  text-decoration: none;
+.intro-details ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
 }
 
-a:hover {
-  text-decoration: underline;
+.intro-details li {
+  margin: 8px 0;
+}
+
+/* If you don't have this yet: */
+body {
+  background-color: #111;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
