@@ -2,22 +2,48 @@
 <html>
 <head>
   <style>
-    .logo {
+    body {
+      background-color: #111;
+      color: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
       position: absolute;
       top: 20px;
       left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
       width: 65px;
       height: 65px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid white;
     }
+
+    .name {
+      margin-left: 10px;
+      width: 120px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: bold;
+    }
   </style>
 </head>
-<body style="background-color: #111; color: white;">
+<body>
 
-  <!-- Use relative path for the logo image if it's in the same folder as your HTML -->
-  <img src="YTLogo.png" alt="logo" class="logo">
+  <!-- Top-left logo and name -->
+  <div class="header">
+    <img src="YTLogo.png" alt="logo" class="logo">
+    <div class="name">HereSkadi</div>
+  </div>
+
+  <!-- Centered welcome message -->
   <h1 style="margin-top: 120px; text-align: center;">Welcome to HereSkadi Config Hub</h1>
 
 </body>
