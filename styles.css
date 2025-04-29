@@ -84,24 +84,7 @@ body {
   }
 }
 
-/* Vertical line between the two sections */
-.vertical-line {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.line {
-  width: 2px;
-  height: 200px;
-  background-color: white;
-  margin-right: 20px;
-}
-
-.right-text {
-  max-width: 60%;
-}
-
+/* Line separator with text to the right */
 .line-container {
   display: flex;
   align-items: center;
