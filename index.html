@@ -17,11 +17,11 @@
       height: 100px;
       background-color: rgba(245, 130, 255, 0.6); /* pinkish-purple */
       display: flex;
+      justify-content: space-between; /* Space between logo/name and menu button */
       align-items: center;
-      padding-left: 20px;
+      padding: 0 20px;
       box-sizing: border-box;
       animation: fadeIn 1s ease-in;
-      justify-content: space-between; /* Space out the left and right sections */
     }
 
     @keyframes fadeIn {
@@ -49,14 +49,6 @@
       font-size: 20px;
       line-height: 30px;
       font-weight: bold;
-    }
-
-    /* Divider Line between left and right */
-    .divider {
-      height: 40px;
-      width: 1px;
-      background-color: white;
-      margin-left: 20px;
     }
 
     h1 {
@@ -116,11 +108,8 @@
       <img src="YTLogo.png" alt="logo" class="logo">
       <div class="name">HereSkadi</div>
     </div>
-
-    <!-- Divider Line -->
-    <div class="divider"></div>
-
-    <!-- Menu Button -->
+    
+    <!-- Menu Button (on the right side) -->
     <div class="menu-button" onclick="toggleMenu()">
       <div></div>
       <div></div>
