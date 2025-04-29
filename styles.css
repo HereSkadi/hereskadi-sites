@@ -1,4 +1,80 @@
-/* Existing styles... */
+body {
+  background-color: #111;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #c56cf0, #ff9ff3); /* soft purple-pink */
+  padding: 10px 20px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.name {
+  font-size: 24px;
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dropdown a {
+  display: block;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #333;
+}
+
+.show {
+  display: block;
+}
+
+/* Main content */
+.content {
+  max-width: 900px;
+  margin: 80px auto 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
 .intro-details {
   max-width: 800px;
@@ -17,12 +93,4 @@
 
 .intro-details li {
   margin: 8px 0;
-}
-
-/* If you don't have this yet: */
-body {
-  background-color: #111;
-  color: white;
-  margin: 0;
-  font-family: Arial, sans-serif;
 }
