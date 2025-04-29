@@ -20,6 +20,12 @@
       align-items: center;
       padding-left: 20px;
       box-sizing: border-box;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     .branding {
@@ -52,7 +58,7 @@
 </head>
 <body>
 
-  <!-- Full-width header with background and left-aligned branding -->
+  <!-- Full-width header with fade-in background -->
   <div class="header-bar">
     <div class="branding">
       <img src="YTLogo.png" alt="logo" class="logo">
