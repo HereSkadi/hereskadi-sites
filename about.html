@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - HereSkadi Config Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Bar -->
+  <div class="header-bar">
+    <div class="branding">
+      <img src="YTLogo.png" alt="logo" class="logo">
+      <div class="name">HereSkadi</div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="dropdown" id="dropdownMenu">
+      <a href="index.html">Home</a>
+      <a href="configs.html">Config File</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+  <!-- About Content -->
+  <div class="about-content">
+    <h2>About HereSkadi Config Hub</h2>
+    <p>Welcome to HereSkadi Config Hub! My mission is simple: to help gamers with low-end systems get the best possible performance out of their games.</p>
+    <p>I provide optimized configuration files for popular games that you can easily download and apply to boost your gaming experience, without the need for complex tweaks or settings adjustments.</p>
+    <p>As someone who enjoys gaming on a budget, I understand the frustration of laggy gameplay. That’s why I’ve dedicated this website to providing solutions for users with limited hardware, like 4GB RAM and integrated graphics.</p>
+    <p>Stay tuned as I continue to add more configs and optimize even more games!</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
