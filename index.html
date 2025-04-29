@@ -17,6 +17,14 @@
       align-items: center;
     }
 
+    .branding {
+      display: flex;
+      align-items: center;
+      background-color: rgba(180, 100, 255, 0.2); /* soft purple with transparency */
+      padding: 10px 15px;
+      border-radius: 12px;
+    }
+
     .logo {
       width: 65px;
       height: 65px;
@@ -29,7 +37,7 @@
       margin-left: 10px;
       width: 120px;
       height: 30px;
-      font-size: 30px;
+      font-size: 20px;
       line-height: 30px;
       font-weight: bold;
     }
@@ -37,10 +45,12 @@
 </head>
 <body>
 
-  <!-- Top-left logo and name -->
+  <!-- Top-left logo and name with background -->
   <div class="header">
-    <img src="YTLogo.png" alt="logo" class="logo">
-    <div class="name">HereSkadi</div>
+    <div class="branding">
+      <img src="YTLogo.png" alt="logo" class="logo">
+      <div class="name">HereSkadi</div>
+    </div>
   </div>
 
   <!-- Centered welcome message -->
