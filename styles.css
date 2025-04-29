@@ -84,13 +84,14 @@ body {
   }
 }
 
-/* Optional: list style */
+/* Justify text for the intro details */
 .intro-details {
   max-width: 800px;
   margin-top: 20px;
   line-height: 1.6;
   font-size: 18px;
   color: #ddd;
+  text-align: justify; /* This makes the text justified */
 }
 
 .intro-details ul {
