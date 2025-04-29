@@ -135,3 +135,26 @@ body {
   color: #ccc;
   margin-bottom: 12px;
 }
+
+/* Feedback Page */
+.feedback-content {
+  max-width: 900px;
+  margin: 80px 40px 0 40px;
+  padding: 20px;
+  text-align: left;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+.feedback-content p {
+  font-size: 22px; /* Larger font size */
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.feedback-content h2 {
+  font-size: 36px; /* Larger heading size */
+  color: #fff;
+}
+
