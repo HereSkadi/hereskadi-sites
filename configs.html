@@ -26,13 +26,57 @@
 
   <!-- Main Content -->
   <div class="content fade-in">
-    <h1>Config File Page</h1>
-    <!-- You can add your upload buttons, file lists, etc. here -->
+    <h1>Config Files</h1>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchInput" onkeyup="searchConfigs()" placeholder="Search for config files...">
+    </div>
+
+    <!-- Config Files List -->
+    <div id="configList">
+      <div class="config-item">
+        <h3>GTA V Config</h3>
+        <p>Optimized settings for smooth gameplay on low-end PCs.</p>
+      </div>
+      <div class="config-item">
+        <h3>Skyrim Config</h3>
+        <p>Boost Skyrim performance with these low-end PC settings.</p>
+      </div>
+      <div class="config-item">
+        <h3>Far Cry 4 Config</h3>
+        <p>Improve Far Cry 4's performance on older hardware.</p>
+      </div>
+      <div class="config-item">
+        <h3>CS:GO Config</h3>
+        <p>Get better FPS in CS:GO with optimized settings.</p>
+      </div>
+      <!-- Add more config files here -->
+    </div>
   </div>
 
   <script>
     function toggleMenu() {
       document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+
+    // Search Functionality
+    function searchConfigs() {
+      var input, filter, configList, configItems, title, i;
+      input = document.getElementById("searchInput");
+      filter = input.value.toLowerCase();
+      configList = document.getElementById("configList");
+      configItems = configList.getElementsByClassName("config-item");
+
+      // Loop through all config items, and hide those that don't match the search query
+      for (i = 0; i < configItems.length; i++) {
+        title = configItems[i].getElementsByTagName("h3")[0];
+        if (title.innerText.toLowerCase().indexOf(filter) > -1) {
+          configItems[i].style.display = "";
+        } else {
+          configItems[i].style.display = "none";
+        }
+      }
     }
   </script>
 
