@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Feedback - HereSkadi Config Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Bar -->
+  <div class="header-bar">
+    <div class="branding">
+      <img src="YTLogo.png" alt="logo" class="logo">
+      <div class="name">HereSkadi</div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="dropdown" id="dropdownMenu">
+      <a href="index.html">Home</a>
+      <a href="configs.html">Config File</a>
+      <a href="about.html">About</a>
+      <a href="feedback.html">User Feedback</a>
+    </div>
+  </div>
+
+  <!-- Feedback Content -->
+  <div class="about-content">
+    <h2 style="text-align: justify;">What Users Say</h2>
+    <div class="feedback-box">
+      <p>"Thanks to HereSkadi, I can finally run GTA V on my old laptop! Truly a lifesaver." — <em>Alex G.</em></p>
+      <p>"The config files helped me play Skyrim without constant lag. Much appreciated!" — <em>Jay</em></p>
+      <p>"Simple, clean, and effective. Just downloaded and dropped in the files—done!" — <em>Nina L.</em></p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
