@@ -33,25 +33,9 @@
       <input type="text" id="searchInput" onkeyup="searchConfigs()" placeholder="Search for config files...">
     </div>
 
-    <!-- Config Files List -->
+    <!-- Empty Config Files List -->
     <div id="configList">
-      <div class="config-item">
-        <h3>GTA V Config</h3>
-        <p>Optimized settings for smooth gameplay on low-end PCs.</p>
-      </div>
-      <div class="config-item">
-        <h3>Skyrim Config</h3>
-        <p>Boost Skyrim performance with these low-end PC settings.</p>
-      </div>
-      <div class="config-item">
-        <h3>Far Cry 4 Config</h3>
-        <p>Improve Far Cry 4's performance on older hardware.</p>
-      </div>
-      <div class="config-item">
-        <h3>CS:GO Config</h3>
-        <p>Get better FPS in CS:GO with optimized settings.</p>
-      </div>
-      <!-- Add more config files here -->
+      <!-- Real config items will be added here later -->
     </div>
   </div>
 
@@ -60,23 +44,26 @@
       document.getElementById("dropdownMenu").classList.toggle("show");
     }
 
-    // Search Functionality
     function searchConfigs() {
-      var input, filter, configList, configItems, title, i;
-      input = document.getElementById("searchInput");
-      filter = input.value.toLowerCase();
-      configList = document.getElementById("configList");
-      configItems = configList.getElementsByClassName("config-item");
+      var input = document.getElementById("searchInput");
+      var filter = input.value.toLowerCase();
+      var configList = document.getElementById("configList");
+      var configItems = configList.getElementsByClassName("config-item");
 
-      // Loop through all config items, and hide those that don't match the search query
-      for (i = 0; i < configItems.length; i++) {
-        title = configItems[i].getElementsByTagName("h3")[0];
+      for (var i = 0; i < configItems.length; i++) {
+        var title = configItems[i].getElementsByTagName("h3")[0];
         if (title.innerText.toLowerCase().indexOf(filter) > -1) {
           configItems[i].style.display = "";
         } else {
           configItems[i].style.display = "none";
         }
       }
+    }
+  </script>
+
+</body>
+</html>
+
     }
   </script>
 
