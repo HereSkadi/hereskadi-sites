@@ -125,3 +125,14 @@ body {
   color: #ddd;
   line-height: 1.6;
 }
+
+/* Search Bar Styling */
+.search-container input {
+  width: 100%; /* Make the search bar take the full width of its container */
+  max-width: 600px; /* Set a maximum width for the search bar */
+  padding: 12px 20px; /* Add padding to make the search bar taller and more spacious */
+  font-size: 18px; /* Increase the font size for better readability */
+  border: 1px solid #ccc; /* Light border for the search bar */
+  border-radius: 5px; /* Rounded corners for the search bar */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
