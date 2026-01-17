@@ -191,8 +191,8 @@ body {
 }
 
 .detail-img {
-  width: 320px;
-  height: 180px;
+  width: 420px;
+  height: 235px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -212,4 +212,5 @@ body {
 .download-btn:hover {
   opacity: 0.9;
 }
+
 
