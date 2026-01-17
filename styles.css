@@ -5,7 +5,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Header section */
+/* ================= Header ================= */
 .header-bar {
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,7 @@ body {
   font-weight: bold;
 }
 
-/* Hamburger Menu */
+/* ================= Menu ================= */
 .hamburger {
   font-size: 28px;
   cursor: pointer;
@@ -68,8 +68,10 @@ body {
   display: block;
 }
 
-/* Main content (Home / Config list / About / Feedback) */
-.content, .about-content, .feedback-content {
+/* ================= Main Pages ================= */
+.content,
+.about-content,
+.feedback-content {
   max-width: 900px;
   margin: 80px 40px 0 40px;
   padding: 20px;
@@ -78,55 +80,13 @@ body {
   animation: fadeIn 1.2s ease-in forwards;
 }
 
-.feedback-content p {
-  font-size: 22px;
-  color: #ddd;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.feedback-content h2 {
-  font-size: 36px;
-  color: #fff;
-}
-
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
 
-/* Optional: list style */
-.intro-details {
-  max-width: 800px;
-  margin-top: 20px;
-  line-height: 1.6;
-  font-size: 18px;
-  color: #ddd;
-}
-
-.intro-details ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-}
-
-.intro-details li {
-  margin: 8px 0;
-}
-
-.about-content h2 {
-  font-size: 32px;
-  color: #fff;
-}
-
-.about-content p {
-  font-size: 18px;
-  color: #ddd;
-  line-height: 1.6;
-}
-
-/* Search Bar Styling */
+/* ================= Search ================= */
 .search-container input {
   width: 100%;
   max-width: 600px;
@@ -137,7 +97,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Config Thumbnails Grid */
+/* ================= Config Grid ================= */
 #configList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -146,12 +106,12 @@ body {
 }
 
 .config-item {
-  text-align: center;
+  background-color: #1a1a1a;
   border: 1px solid #444;
   border-radius: 12px;
   padding: 10px;
+  text-align: center;
   transition: transform 0.2s;
-  background-color: #1a1a1a;
 }
 
 .config-item:hover {
@@ -176,14 +136,28 @@ body {
   color: white;
 }
 
-/* CENTER ONLY the detail page */
+/* ================= DETAIL PAGE ONLY ================= */
 .detail-content {
-  margin: 80px auto 0 auto;
+  margin: 80px auto 0 auto; /* center the page */
   max-width: 900px;
-  text-align: center;
+  text-align: left;        /* LEFT content */
 }
 
-/* Detail page image + button */
+/* Name + Image wrapper */
+.img-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* LEFT aligned */
+}
+
+.img-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #c56cf0;
+}
+
+/* Detail image */
 .detail-img {
   width: 420px;
   height: 235px;
@@ -192,6 +166,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Download button */
 .download-btn {
   padding: 15px 30px;
   font-size: 18px;
@@ -206,18 +181,3 @@ body {
 .download-btn:hover {
   opacity: 0.9;
 }
-
-.img-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* THIS centers everything */
-  justify-content: center;
-}
-
-.img-title {
-  font-size: 32px;
-  margin-bottom: 10px; /* space between name and image */
-  color: #c56cf0;      /* same color as before */
-}
-
