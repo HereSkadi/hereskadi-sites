@@ -45,30 +45,32 @@
   <!-- Add more game thumbnails here -->
 </div>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("dropdownMenu").classList.toggle("show");
-    }
+<script>
+  function toggleMenu() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+  }
 
-    function searchConfigs() {
-      var input = document.getElementById("searchInput");
-      var filter = input.value.toLowerCase();
-      var configList = document.getElementById("configList");
-      var configItems = configList.getElementsByClassName("config-item");
+  function searchConfigs() {
+    var input = document.getElementById("searchInput");
+    var filter = input.value.toLowerCase();
+    var configList = document.getElementById("configList");
+    var configItems = configList.getElementsByClassName("config-item");
 
-      for (var i = 0; i < configItems.length; i++) {
-        var title = configItems[i].getElementsByTagName("h3")[0];
-        if (title.innerText.toLowerCase().indexOf(filter) > -1) {
-          configItems[i].style.display = "";
-        } else {
-          configItems[i].style.display = "none";
-        }
+    for (var i = 0; i < configItems.length; i++) {
+      var title = configItems[i].getElementsByTagName("h3")[0];
+      if (title.innerText.toLowerCase().indexOf(filter) > -1) {
+        configItems[i].style.display = "";
+      } else {
+        configItems[i].style.display = "none";
       }
     }
-  </script>
+  }
 
-</body>
-</html>
-
-
-
+  // NEW: remove focus when clicking outside the search bar
+  document.addEventListener("click", function(event) {
+    var searchBox = document.getElementById("searchInput");
+    if (!searchBox.contains(event.target)) {
+      searchBox.blur();
+    }
+  });
+</script>
