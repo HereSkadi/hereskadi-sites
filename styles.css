@@ -183,14 +183,28 @@ body {
 }
 
 .back-btn {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #c56cf0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  padding: 8px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
   text-decoration: none;
-  font-size: 16px;
+  border-radius: 999px;
+  background: rgba(197, 108, 240, 0.15);
+  border: 1px solid rgba(197, 108, 240, 0.4);
+  transition: all 0.2s ease;
 }
 
 .back-btn:hover {
-  color: white;
-  text-decoration: underline;
+  background: rgba(197, 108, 240, 0.3);
+  border-color: #c56cf0;
+  transform: translateX(-2px);
+}
+
+.back-icon {
+  font-size: 18px;
+  line-height: 1;
 }
