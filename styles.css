@@ -158,11 +158,16 @@ body {
   transform: translateY(-5px);
 }
 
-.thumb {
-  width: 300%;
-  height: 250px;      /* bigger height */
-  object-fit: cover;
-  border-radius: 30px;
+#configList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
-
+.thumb {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
