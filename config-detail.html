@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Config Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+  <!-- Header Bar -->
+  <div class="header-bar">
+    <div class="branding">
+      <img src="YTLogo.png" alt="logo" class="logo">
+      <div class="name">HereSkadi</div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="dropdown" id="dropdownMenu">
+      <a href="index.html">Home</a>
+      <a href="configs.html">Config File</a>
+      <a href="about.html">About</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content fade-in">
+    <h1 id="gameName">Game Name</h1>
+    <p id="configName">Config File: GameUserSettings.ini</p>
+
+    <a id="downloadLink" href="#" download>
+      <button class="download-btn">Download Config</button>
+    </a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+
+    // Get game from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const game = urlParams.get('game');
+
+    // Change values based on game
+    if (game === 'game1') {
+      document.getElementById("gameName").innerText = "Dispatch";
+      document.getElementById("configName").innerText = "Config File: GameUserSettings.ini";
+      document.getElementById("downloadLink").href = "configs/GameUserSettings.ini";
+    }
+  </script>
+
+</body>
+</html>
