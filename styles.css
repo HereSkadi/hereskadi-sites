@@ -171,3 +171,14 @@ body {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.config-item h3 {
+  color: #b17cff; /* purple color */
+  margin-top: 10px;
+  transition: color 0.2s;
+}
+
+.config-item a:hover h3,
+.config-item a:active h3 {
+  color: white;
+}
