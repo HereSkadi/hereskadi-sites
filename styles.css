@@ -208,19 +208,13 @@ body {
 }
 
 .img-wrapper {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-title {
-  position: absolute;
-  bottom: 10px;        /* Put the name at the bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  padding: 6px 12px;
-  background: rgba(0, 0, 0, 0.5); /* dark background */
-  border-radius: 8px;
+  font-size: 32px;
+  margin-bottom: 10px; /* space between name and image */
+  color: #c56cf0;      /* same color as before */
 }
