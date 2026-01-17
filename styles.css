@@ -208,3 +208,8 @@ body {
   font-size: 18px;
   line-height: 1;
 }
+
+.back-btn {
+  position: sticky;
+  top: 90px;
+}
