@@ -155,7 +155,6 @@ body {
   font-size: 32px;
   margin-bottom: 10px;
   color: white;              /* make text white */
-  text-transform: uppercase; /* make text ALL CAPS */
 }
 
 /* Detail image */
@@ -182,4 +181,5 @@ body {
 .download-btn:hover {
   opacity: 0.9;
 }
+
 
