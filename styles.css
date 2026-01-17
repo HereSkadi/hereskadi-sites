@@ -160,7 +160,7 @@ body {
 
 .thumb {
   width: 100%;
-  height: 120px;
-  object-fit: cover;
+  height: 180px;      /* Fixed height */
+  object-fit: cover;  /* Keeps aspect ratio and crops */
   border-radius: 10px;
 }
