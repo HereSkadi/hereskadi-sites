@@ -33,11 +33,17 @@
       <input type="text" id="searchInput" onkeyup="searchConfigs()" placeholder="Search for config files...">
     </div>
 
-    <!-- Empty Config Files List -->
-    <div id="configList">
-      <!-- Real config items will be added here later -->
-    </div>
+    <!-- Config Files List -->
+<div id="configList">
+  <div class="config-item">
+    <a href="config-detail.html?game=game1">
+      <img src="thumbnails/game1.jpg" class="thumb">
+      <h3>Game 1</h3>
+    </a>
   </div>
+
+  <!-- Add more game thumbnails here -->
+</div>
 
   <script>
     function toggleMenu() {
@@ -63,3 +69,4 @@
 
 </body>
 </html>
+
