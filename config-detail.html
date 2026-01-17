@@ -24,19 +24,19 @@
     </div>
   </div>
 
-<div class="content fade-in center-content">
-  <img id="gameImg" src="" alt="Game Thumbnail" class="detail-img">
+  <div class="content fade-in center-content">
+    <img id="gameImg" src="" alt="Game Thumbnail" class="detail-img">
 
-  <h1 id="gameName">Game Name</h1>
+    <h1 id="gameName">Game Name</h1>
 
-  <p id="configName">Config File: GameUserSettings.ini</p>
-  <p id="fileSize">Size: 4.00 KB</p>
-  <p id="updateDate">Updated: 1 Jan 2025</p>
+    <p id="configName">Config File: GameUserSettings.ini</p>
+    <p id="fileSize">Size: 4.00 KB</p>
+    <p id="updateDate">Updated: 1 Jan 2025</p>
 
-  <a id="downloadLink" href="#" download>
-    <button class="download-btn">Download Config</button>
-  </a>
-</div>
+    <a id="downloadLink" href="#" download>
+      <button class="download-btn">Download Config</button>
+    </a>
+  </div>
 
   <script>
     function toggleMenu() {
@@ -49,6 +49,7 @@
 
     // Change values based on game
     if (game === 'game1') {
+      document.getElementById("gameImg").src = "thumbnails/game1.png";
       document.getElementById("gameName").innerText = "Dispatch";
       document.getElementById("configName").innerText = "Config File: GameUserSettings.ini";
       document.getElementById("downloadLink").href = "configs/GameUserSettings.ini";
