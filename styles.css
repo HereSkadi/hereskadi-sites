@@ -159,8 +159,9 @@ body {
 }
 
 .thumb {
-  width: 100%;
+  width: 300%;
   height: 220px;      /* bigger height */
   object-fit: cover;
   border-radius: 10px;
 }
+
