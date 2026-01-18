@@ -266,3 +266,14 @@ body {
   color: #aaa;
   font-size: 14px;
 }
+
+/* ================= DETAIL PAGE ONLY ================= */
+.detail-content {
+  margin: 80px auto 0 auto;
+  max-width: 900px;
+  text-align: left;
+
+  /* ADD THIS */
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
