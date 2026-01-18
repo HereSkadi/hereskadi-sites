@@ -15,30 +15,37 @@
     </div>
 
     <!-- Hamburger Menu -->
-<div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-  <div id="menu" class="dropdown">
-    <a href="index.html">Home</a>
-    <a href="configs.html">Config Files</a>
-    <a href="feedback.html">User Feedback</a>
-    <a href="about.html">About</a>
+    <div id="menu" class="dropdown">
+      <a href="index.html">Home</a>
+      <a href="configs.html">Config Files</a>
+      <a href="feedback.html">User Feedback</a>
+      <a href="about.html">About</a>
+    </div>
   </div>
-</div>
 
+  <!-- Detail Content -->
   <div class="content fade-in center-content">
-    <a href="configs.html" class="back-btn">
-  <span class="back-icon">←</span>
-  Back to Configs
-</a>
-    <div class="img-wrapper">
-  <div class="img-title" id="gameName">Game Name</div>
-  <img id="gameImg" src="" alt="Game Thumbnail" class="detail-img">
-</div>
 
+    <!-- Back Button -->
+    <a href="configs.html" class="back-btn">
+      <span class="back-icon">←</span>
+      Back to Configs
+    </a>
+
+    <!-- Image + Title -->
+    <div class="img-wrapper">
+      <div class="img-title" id="gameName">Game Name</div>
+      <img id="gameImg" src="" alt="Game Thumbnail" class="detail-img">
+    </div>
+
+    <!-- Info -->
     <p id="configName">Config File: GameUserSettings.ini</p>
     <p id="fileSize">Size: 4.00 KB</p>
     <p id="updateDate">Updated: 18 Jan 2026</p>
 
+    <!-- Download -->
     <a id="downloadLink" href="#" download>
       <button class="download-btn">Download Config</button>
     </a>
@@ -46,7 +53,7 @@
 
   <script>
     function toggleMenu() {
-      document.getElementById("dropdownMenu").classList.toggle("show");
+      document.getElementById("menu").classList.toggle("show");
     }
 
     // Get game from URL
