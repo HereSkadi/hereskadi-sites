@@ -14,9 +14,10 @@
       <div class="name">HereSkadi</div>
     </div>
 
-  <!-- Hamburger Menu -->
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
+    <!-- Dropdown Menu -->
     <div id="menu" class="dropdown">
       <a href="index.html">Home</a>
       <a href="configs.html">Config Files</a>
@@ -28,14 +29,21 @@
   <!-- Feedback Content -->
   <div class="feedback-content">
     <h2>We'd Love to Hear From You!</h2>
-    <p style="text-align: justify;">Thanks for visiting! I'm not accepting direct feedback submissions on the website just yet.</p>
-    <p style="text-align: justify;">But if you’d like to be featured, please leave your feedback or comment on any of my YouTube videos. I’ll pick and display some of them right here on this page!</p>
-    <p style="text-align: justify; color: #aaa;">(Stay tuned, this section will be updated with real feedback soon!)</p>
+    <p style="text-align: justify;">
+      Thanks for visiting! I'm not accepting direct feedback submissions on the website just yet.
+    </p>
+    <p style="text-align: justify;">
+      If you'd like to be featured, please leave your feedback on any of my YouTube videos.
+    </p>
+    <p style="text-align: justify; color: #aaa;">
+      (This section will be updated with real feedback soon!)
+    </p>
   </div>
 
+  <!-- Script -->
   <script>
     function toggleMenu() {
-      document.getElementById("dropdownMenu").classList.toggle("show");
+      document.getElementById("menu").classList.toggle("show");
     }
   </script>
 
