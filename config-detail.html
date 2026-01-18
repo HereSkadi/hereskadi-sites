@@ -25,35 +25,52 @@
     </div>
   </div>
 
-  <!-- Detail Content -->
-  <div class="content fade-in center-content">
-
-    <!-- Back Button -->
+  <!-- MAIN CONTENT -->
+  <div class="detail-content">
     <a href="configs.html" class="back-btn">
       <span class="back-icon">←</span>
       Back to Configs
     </a>
 
-    <!-- Image + Title -->
-    <div class="img-wrapper">
-      <div class="img-title" id="gameName">Game Name</div>
-      <img id="gameImg" src="" alt="Game Thumbnail" class="detail-img">
+    <!-- 2 COLUMN LAYOUT -->
+    <div class="detail-grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="detail-left">
+        <div class="img-wrapper">
+          <div class="img-title" id="gameName">Game Name</div>
+          <img id="gameImg" src="" alt="Game Thumbnail" class="detail-img">
+        </div>
+
+        <p id="configName">Config File: GameUserSettings.ini</p>
+        <p id="fileSize">Size: 4.00 KB</p>
+        <p id="updateDate">Updated: 18 Jan 2026</p>
+
+        <a id="downloadLink" href="#" download>
+          <button class="download-btn">Download Config</button>
+        </a>
+      </div>
+
+      <!-- RIGHT COLUMN (Video Template) -->
+      <div class="detail-right">
+        <div class="video-box">
+          <div class="video-title">Guide Video</div>
+          <div class="video-placeholder">
+            <p>No video uploaded yet</p>
+            <p>Upload from PC later</p>
+          </div>
+          <p class="video-note">
+            This section will show a guide video for downloading & applying the config.
+          </p>
+        </div>
+      </div>
+
     </div>
-
-    <!-- Info -->
-    <p id="configName">Config File: GameUserSettings.ini</p>
-    <p id="fileSize">Size: 4.00 KB</p>
-    <p id="updateDate">Updated: 18 Jan 2026</p>
-
-    <!-- Download -->
-    <a id="downloadLink" href="#" download>
-      <button class="download-btn">Download Config</button>
-    </a>
   </div>
 
   <script>
     function toggleMenu() {
-      document.getElementById("menu").classList.toggle("show");
+      document.getElementById("dropdownMenu").classList.toggle("show");
     }
 
     // Get game from URL
