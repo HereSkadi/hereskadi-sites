@@ -68,6 +68,9 @@ body {
   display: block;
 }
 
+z-index: 9999;
+pointer-events: auto;
+
 /* ================= Main Pages ================= */
 .content,
 .about-content,
@@ -213,3 +216,4 @@ body {
   position: sticky;
   top: 90px;
 }
+
