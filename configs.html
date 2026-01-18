@@ -15,7 +15,7 @@
     </div>
 
     <!-- Hamburger Menu -->
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
     <div id="menu" class="dropdown">
       <a href="index.html">Home</a>
@@ -28,52 +28,54 @@
   <!-- Main Content -->
   <div class="content fade-in">
     <h1>Config Files</h1>
-    
+
     <!-- Search Bar -->
     <div class="search-container">
       <input type="text" id="searchInput" onkeyup="searchConfigs()" placeholder="Search for config files...">
     </div>
 
     <!-- Config Files List -->
-<div id="configList">
-  <div class="config-item">
-    <a href="config-detail.html?game=game1">
-      <img src="thumbnails/game1.png" class="thumb">
-      <h3>Dispatch</h3>
-    </a>
+    <div id="configList">
+      <div class="config-item">
+        <a href="config-detail.html?game=game1">
+          <img src="thumbnails/game1.png" class="thumb">
+          <h3>Dispatch</h3>
+        </a>
+      </div>
+
+      <!-- Add more game thumbnails here -->
+    </div>
   </div>
 
-  <!-- Add more game thumbnails here -->
-</div>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
 
-<script>
-  function toggleMenu() {
-    document.getElementById("dropdownMenu").classList.toggle("show");
-  }
+    function searchConfigs() {
+      var input = document.getElementById("searchInput");
+      var filter = input.value.toLowerCase();
+      var configList = document.getElementById("configList");
+      var configItems = configList.getElementsByClassName("config-item");
 
-  function searchConfigs() {
-    var input = document.getElementById("searchInput");
-    var filter = input.value.toLowerCase();
-    var configList = document.getElementById("configList");
-    var configItems = configList.getElementsByClassName("config-item");
-
-    for (var i = 0; i < configItems.length; i++) {
-      var title = configItems[i].getElementsByTagName("h3")[0];
-      if (title.innerText.toLowerCase().indexOf(filter) > -1) {
-        configItems[i].style.display = "";
-      } else {
-        configItems[i].style.display = "none";
+      for (var i = 0; i < configItems.length; i++) {
+        var title = configItems[i].getElementsByTagName("h3")[0];
+        if (title.innerText.toLowerCase().indexOf(filter) > -1) {
+          configItems[i].style.display = "";
+        } else {
+          configItems[i].style.display = "none";
+        }
       }
     }
-  }
 
-  // NEW: remove focus when clicking outside the search bar
-  document.addEventListener("click", function(event) {
-    var searchBox = document.getElementById("searchInput");
-    if (!searchBox.contains(event.target)) {
-      searchBox.blur();
-    }
-  });
-</script>
+    // NEW: remove focus when clicking outside the search bar
+    document.addEventListener("click", function(event) {
+      var searchBox = document.getElementById("searchInput");
+      if (!searchBox.contains(event.target)) {
+        searchBox.blur();
+      }
+    });
+  </script>
 
-
+</body>
+</html>
